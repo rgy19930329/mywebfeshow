@@ -1,0 +1,93 @@
+.waveWinA {
+	width: 450px;
+}
+
+.waveWinA li {
+	margin-left: 10px;margin-right: 10px;
+}
+
+.waveWinA a {
+	text-decoration: none;
+	color: #444;
+	font-family: "微软雅黑";font-size: 15px;font-weight: bold;
+	display: block;
+	padding: 6px;
+	transition:all 300ms ease;
+}
+
+.waveWinA a:hover {
+	padding-left: 15px;
+	color: #fff;
+	background-color: #747474;
+}
+
+.waveWinA a:hover span {
+	color: yellow;
+}
+
+.waveWinA span {
+	font-weight: bold;
+	font-family: "华文行楷";
+}
+
+/*=============================================*/
+
+.work_content {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+/*=============================================*/
+#about .hanzi {
+	font-size: 25px;
+	font-family: "华文行楷";
+}
+
+#about span {
+	font-size: 25px;
+	font-family: "微软雅黑";
+}
+
+#about p {
+	font-size: 25px;
+	font-family: "华文行楷";
+}
+
+#about a {
+	text-decoration: none;
+	color: #f69537;
+}
+
+#about a:hover {
+	text-decoration: underline;
+}
+
+.w380 {
+	width: 380px;
+}
+
+.fr {
+	float: right;
+}
+
+/*=============================================*/
+.index {
+	width: 60px;height: 150px;
+	position: absolute;
+	right: 20px;top: 20px;
+	cursor: pointer;
+}
+
+.break {
+	width: 60px;height: 150px;
+	position: absolute;
+	right: 20px;top: 200px;
+	cursor: pointer;
+}
+
+.paper {
+	width: 150px;height: 150px;
+	position: absolute;
+	right: -150px;top: 0;
+	display: none;
+}

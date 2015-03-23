@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Javascript “为屏幕点亮生命”</title>
+<script src="../static/js/jquery-1.8.2.min.js"></script>
+
+<style type="text/css">
+@import url("../static/css/base.css");
+@import url("../static/css/webfe_javascript.css");
+</style>
+
+<!--
+
+<link href="" rel="stylesheet" type="text/css" />
+
+-->
+
+
+<style type="text/css">
+/*=============================================*/
+
+.temp p {
+	text-align: center;
+	line-height: 500px;
+	font-size: 80px;
+}
+
+/*=============================================*/
+</style>
+
+</head>
+<body>
+	<div class="neck">
+		<div class="middle">
+			<a href="../index.html"><img src="../static/img/logo.png" class="neck_logo" /></a>
+			<p class="neck_p1">
+				<a href="work.jsp">work</a>	
+				<a href="webfe_clone.html">网页克隆</a>	
+				<a href="webfe_original.html">原创网页</a>	
+				<a href="webfe_css.html" >CSS</a>	
+				<a href="#" class="neck_selected">JavaScript</a>	
+			</p>
+
+			<p class="neck_p2">
+				<input type="text" class="neck_search" />
+				<img src="../static/img/search.png" class="img_search" />
+				<a href="login_admin.html" class="ml20">admin登录</a>
+				<a href="register.html">注册</a>
+			</p>
+			<div class="cb"></div>
+		</div>
+	</div>
+
+	<div class="main">
+		<div class="middle">
+			<p class="item_title">Javascript “为屏幕点亮生命”</p>
+			<div class="middle_content">
+				<ul>
+					<li>
+						<div class="img_panel">
+							<a href="cardswitch.html"><img src="../static/img/cardswitch_s.jpg"></a>
+							<a href="cardswitch.html"><div class="mask"></div></a>
+						</div>
+						<div class="panel">
+							<p class="fl zhu"><a href="cardswitch.html">卡片式切换效果</a></p>
+						</div>
+					</li>
+					<li>
+						<div class="img_panel">
+							<a href="sAlert.html"><img src="../static/img/sAlert_s.jpg"></a>
+							<a href="sAlert.html"><div class="mask"></div></a>
+						</div>
+						<div class="panel">
+							<p class="fl zhu"><a href="sAlert.html">sAlert</a></p>
+						</div>
+					</li>
+					<li>
+						<div class="img_panel">
+							<a href="winslide_1.html"><img src="../static/img/winslide_1_s.jpg"></a>
+							<a href="winslide_1.html"><div class="mask"></div></a>
+						</div>
+						<div class="panel">
+							<p class="fl zhu"><a href="winslide_1.html">滑动窗口style1</a></p>
+						</div>
+					</li>
+					<li>
+						<div class="img_panel">
+							<a href="winslide_2.html"><img src="../static/img/winslide_2_s.jpg"></a>
+							<a href="winslide_2.html"><div class="mask"></div></a>
+						</div>
+						<div class="panel">
+							<p class="fl zhu"><a href="winslide_2.html">滑动窗口style2</a></p>
+						</div>
+					</li>
+					<div class="cb"></div>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="foot">
+		<div class="middle">
+			<p>Copyright © 2015   <a href="work.jsp">Kylin</a></p>
+		</div>
+	</div>
+
+<script src="../static/js/shadow_expand.js"></script>
+
+<script type="text/javascript">
+/*======================================================*/
+
+/*======================================================*/
+$(".img_panel").mouseenter(function(){
+	$(this).children().children(".mask").fadeIn();
+});
+
+$(".img_panel").mouseleave(function(){
+	$(this).children().children(".mask").fadeOut();
+})
+
+/*======================================================*/
+
+</script>
+
+
+</body>
+</html>

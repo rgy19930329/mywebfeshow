@@ -1,0 +1,721 @@
+
+a {
+	text-decoration: none;
+	font-family: "微软雅黑";
+}
+
+body {
+	width: 100%;
+	1overflow: hidden;
+}
+
+.middle {
+	width: 980px;
+	margin: 0 auto;
+}
+
+.pageSize {
+	width: 100%;height: 100%;
+	overflow: hidden;
+}
+
+/*================================*/
+
+#head {
+	width: 100%;height: 80px;
+	position: fixed;
+	background-color: #fff;
+	top: 0;
+	z-index: 20;
+	border-bottom: 1px solid #ddd;
+}
+
+.head_left {
+	line-height: 100px;
+	float: left;
+}
+
+.head_right {
+	float: right;
+	position: relative;
+	top: 20px;
+}
+
+.head_email {
+	width: 270px;height: 28px;
+	font-size: 15px;
+	font-family: "微软雅黑";
+	padding: 5px 10px;
+	border-radius: 5px;
+	border: 1px solid #000;
+	float: left;
+	margin-right: 15px;
+}
+
+.head_register {
+	width: 80px;height: 38px;
+	display: block;
+	background-color: #08f;
+	border-radius: 4px;
+	float: left;
+	border: 1px solid #08f;
+	text-align: center;
+	line-height: 38px;
+	margin-right: 15px;
+	color: #fff;
+}
+
+.head_login {
+	width: 80px;height: 38px;
+	display: block;
+	background-color: #fff;
+	border-radius: 4px;
+	float: left;
+	border: 1px solid #ddd;
+	text-align: center;
+	line-height: 38px;
+	color: #000;
+}
+
+.head_login:hover {
+	background-color: #ddd;
+}
+
+/*================================*/
+
+.page_1 {
+	background: #000 url("http://www.mingdao.com/modules/mdpublic/home/images/bannerBg.jpg") no-repeat right bottom;
+	background-size: cover;
+}
+
+.logo {
+	width: 67px;height: 55px;
+	margin-top: 56px;
+	float: left;
+	background: url("http://www.mingdao.com/modules/mdpublic/home/images/mdIcon.png") no-repeat -311px 0;
+}
+
+.login {
+	margin-top: 56px;
+	float: right;
+}
+
+.login_btn {
+	background-color: #06c;
+	width: 100px;height: 50px;
+	display: block;
+	line-height: 50px;
+	text-align: center;
+	color: #fff;
+	border-radius: 3px;
+}
+
+.login_btn:hover  {
+	background-color: #07c;
+}
+
+.register {
+	margin-top: 100px;
+}
+
+.register_p2 {
+	margin-top: 50px;
+}
+
+.register_p3 {
+	margin-top: 20px;
+}
+
+.email {
+	border: 0;
+	width: 350px;
+	padding: 12px 15px;padding-right: 0;
+	border-radius: 3px;
+	font-size: 18px;
+
+}
+
+.email::-webkit-input-placeholder {
+	font-family: "微软雅黑";
+	font-size: 18px;
+	line-height: 20px;
+}
+
+.email::-moz-placeholder {
+	font-family: "微软雅黑";
+	font-size: 19px;
+	line-height: 20px;
+}
+
+.email:-ms-input-placeholder {
+	font-family: "微软雅黑";
+	font-size: 19px;
+	line-height: 20px;
+}
+
+.register_btn {
+	width: 365px;height: 50px;
+	line-height: 50px;
+	background-color: #06c;
+	display: block;
+	color: #fff;
+	font-family: "微软雅黑";
+	text-align: center;
+	border-radius: 3px;
+}
+
+.feature {
+	margin-top: 50px;
+	cursor: pointer;
+}
+
+.newFeature {
+	color: #ddd;
+}
+
+.iconFeature {
+	display: inline-block;
+	width: 16px;height: 16px;
+	vertical-align: middle;
+	background: url("http://www.mingdao.com/modules/mdpublic/home/images/mdIcon.png") no-repeat -62px -59px;
+}
+
+.feature:hover .iconFeature {
+	background: url("http://www.mingdao.com/modules/mdpublic/home/images/mdIcon.png") no-repeat -78px -59px;
+}
+
+/*================================*/
+
+.page_2 {
+	padding-top: 150px;
+}
+
+.page2_title {
+	width: 508px;height: 89px;
+	margin: 0 auto 50px;
+	background: url("http://www.mingdao.com/modules/mdpublic/home/images/mdIcon.png") no-repeat 0 -320px;
+}
+
+.page2_content {
+	width: 850px;height: 300px;
+	margin: 0 auto;
+}
+
+.featureItem {
+	width: 147px;height: 240px;
+	float: left;
+	margin-right: 84px;
+	cursor: pointer;
+	position: relative;
+}
+
+.fitem4 {
+	margin-right: 0;
+}
+
+.page2_content p {
+	font-family: "微软雅黑";
+	font-size: 30px;
+	text-align: center;
+	margin-top: 50px;
+	color: #666;
+}
+
+.item_top {
+	width: 147px;height: 147px;
+	border-radius: 50%;
+	background: url("http://www.mingdao.com/modules/mdpublic/home/images/mdFeatureSmall.png") no-repeat;
+}
+
+.fitem1 .item_top {
+	background-position: 0 0;
+}
+
+.fitem2 .item_top{
+	background-position: -147px 0;
+}
+
+.fitem3 .item_top{
+	background-position: -294px 0;
+}
+
+.fitem4 .item_top{
+	background-position: -441px 0;
+}
+
+.featureItem:hover .item_top {
+	background: orange;
+}
+
+.mask {
+	width: 74px;height: 63px;
+	position: absolute;
+	display: none;
+	background: url("http://www.mingdao.com/modules/mdpublic/home/images/mdFeatureSmall.png") no-repeat;
+	top: 0;left: 36.5px;
+}
+
+.mask1 {
+	background-position: -37px -42px;
+}
+
+.mask2 {
+	background-position: -184px -42px;
+}
+
+.mask3 {
+	background-position: -331px -42px;
+}
+
+.mask4 {
+	background-position: -478px -42px;
+}
+
+/*================================*/
+
+.page_3 {
+	background-color: #f0f0f0;
+}
+
+.page3_content {
+	margin-top: 150px;
+	float: left;
+	z-index: 10;
+}
+
+h1 {
+	font-size: 35px;
+	font-family: "微软雅黑";
+	color: #555;
+	padding-bottom: 30px;
+}
+
+.page3_content p {
+	font-size: 18px;
+	font-family: "微软雅黑";
+	color: #777;
+	line-height: 45px;
+}
+
+.viewVideo {
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+.btnViewVideo {
+	color: #06c;
+	cursor: pointer;
+}
+
+.iconViewVideo {
+	display: inline-block;
+	width: 15px;height: 15px;
+	vertical-align: middle;
+	cursor: pointer;
+	background: url("http://www.mingdao.com/modules/mdpublic/home/images/mdIcon.png") -94px -59px;
+}
+
+.comunication {
+	width: auto;height: 100%;
+	position: absolute;
+	bottom: 0;right: 0;
+}
+
+/*================================*/
+
+.page4_content {
+	float: right;
+	margin-top: 150px;
+}
+
+
+.page4_content p {
+	font-size: 18px;
+	font-family: "微软雅黑";
+	color: #777;
+	line-height: 45px;
+	text-align: right;
+}
+
+.task {
+	width: 660px;height: auto;
+	position: absolute;
+	left: 0;bottom: 0;
+}
+
+/*================================*/
+
+.page_5 {
+	background-color: #f0f0f0;
+}
+
+.page5_content {
+	margin-top: 150px;
+	float: left;
+}
+
+.page5_content p {
+	font-size: 18px;
+	font-family: "微软雅黑";
+	color: #777;
+	line-height: 45px;
+}
+
+.achievement {
+	width: 780px;height: auto;
+	position: absolute;
+	bottom: 0;right: 0;
+}
+
+
+/*================================*/
+
+.page6_content {
+	float: left;
+	margin-top: 150px;
+}
+
+.page6_content h1 {
+	color: #555;
+}
+
+.page6_content .simple {
+	font-size: 35px;
+	font-family: "微软雅黑";
+	color: #777;
+	padding-bottom: 30px;
+}
+
+.download {
+	width: 200px;height: 60px;
+	float: left;
+	margin-left: 30px;
+}
+
+.download label {
+	font-size: 18px;
+	font-family: "微软雅黑";
+	color: #777;
+	line-height: 45px;
+}
+
+.download span {
+	border-right: 1px solid #d1d1d1;
+	height: 27px;line-height: 27px;
+	vertical-align: middle;
+	display: inline-block;
+	margin: 0 7px;
+}
+
+.download_innner {
+	display: inline-block;
+	margin-left: 20px;
+	vertical-align: middle;
+	border: 1px solid #ddd;
+	padding: 10px 15px;
+	border-radius: 4px;
+}
+
+.appIcon {
+	width: 22px;height: 27px;
+	display: inline-block;
+	vertical-align: middle;
+	background: url("http://www.mingdao.com/modules/mdpublic/home/images/mdIcon.png") no-repeat;
+}
+
+.iconiphone {
+	background-position: 0 0;
+}
+
+.iconandroid {
+	background-position: -22px 0;
+}
+
+.iconiphone:hover {
+	background-position: 0 -27px;
+}
+
+.iconandroid:hover {
+	background-position: -22px -27px;
+}
+
+.app {
+	position: absolute;
+	width: 610px;height: auto;
+	bottom: 0;right: 200px;
+}
+
+/*================================*/
+
+.page_7 {
+	background-color: #f0f0f0;
+}
+
+.page7_content {
+	width: 650px;
+	margin: 0 auto;
+	padding-top: 150px;
+}
+
+
+.page7_content img {
+	width: 650px;height: auto;
+}
+
+.mdMarket {
+	margin: 10px 46px 0;
+	border-left: 2px solid #aaa;
+	border-right: 2px solid #aaa;
+	padding: 0 46px;
+	cursor: pointer;
+}
+
+.partner {
+	margin-top: 10px;
+	cursor: pointer;
+}
+
+.page7_content a {
+	font-size: 16px;
+	font-family: "微软雅黑";
+	color: #555;
+}
+
+.iconMDLeft {
+	display: inline-block;
+	width: 16px;height: 16px;
+	vertical-align: -2px;
+	background: url("http://www.mingdao.com/modules/mdpublic/home/images/mdIcon.png") -210px 0;
+}
+
+.iconArrowRight {
+	display: inline-block;
+	width: 15px;height: 15px;
+	background: url("http://www.mingdao.com/modules/mdpublic/home/images/mdIcon.png") -109px -59px;
+}
+
+
+/*================================*/
+
+.page8_content {
+	width: 800px;
+	margin: 0 auto;
+	padding-top: 150px;
+}
+
+.page8_content h1 {
+	width: 400px;
+	padding: 20px 30px;
+	border: 1px solid;
+	margin: 0 auto;
+	margin-bottom: 70px;
+	border-radius: 5px;
+}
+
+.page8_content img {
+	width: 800px;height: auto;
+}
+
+
+/*================================*/
+
+.bgVideo {
+	width: 100%;height: auto;
+	display: block;
+}
+
+
+.thigh {
+	width: 100%;height: 250px;
+	position: absolute;
+	background-color: #111;
+	bottom: 80px;
+}
+
+
+.foot {
+	position: absolute;
+	width: 100%;height: 80px;
+	background-color: #fff;
+	bottom: 0;
+}
+
+.thigh_left {
+	margin-left: 150px;
+	margin-top: 30px;
+	float: left;
+}
+
+.thigh .listItem {
+	float: left;
+	padding-right: 80px;
+}
+
+.listItem li {
+	line-height: 30px;
+}
+
+.listItem .title {
+	padding-bottom: 10px;
+}
+
+.listItem label {
+	font-family: "微软雅黑";f
+	font-size: 15px;
+	color: #888;
+}
+
+.listItem a {
+	font-size: 12px;
+	color: #888;
+}
+
+.listItem a:hover {
+	color: #fff;
+}
+
+
+.foot p {
+	font-family: "微软雅黑";
+	font-size: 14px;
+	color: #222;
+	line-height: 80px;
+	padding-left: 150px;
+}
+
+.foot img {
+	vertical-align: middle;
+	padding-left: 250px;
+}
+
+
+.thigh_right {
+	width: 430px;
+	float: left;
+	margin-top: 35px;
+}
+
+
+.mobile {
+	display: inline-block;
+	vertical-align: middle;
+	width: 212px;height: 67px;
+	opacity: 0.5;
+	background: url("http://www.mingdao.com/modules/mdpublic/home/images/mdIcon.png") -210px -470px;
+}
+
+.highlight_1:hover {
+	opacity: 1;
+}
+
+
+.server {
+	display: inline-block;
+	width: 176px;height: 58px;
+	vertical-align: middle;
+	opacity: 0.5;
+	background: url("http://www.mingdao.com/modules/mdpublic/home/images/mdIcon.png") -210px -410px;
+}
+
+.icond {
+	display: inline-block;
+	width: 33px;height: 33px;
+	line-height: 33px;
+	text-align: center;
+	background: #7e7e7e;
+	border-radius: 4px;
+	transition: all .3s;
+	margin-right: 15px;
+}
+
+.icond:hover {
+	background-color: #fff;
+}
+
+.weixin_inner {	
+	position: relative;
+	top: 6px;left: 5px;
+	display: block;
+	width: 24px;height: 20px;
+	background: url("http://www.mingdao.com/modules/mdpublic/home/images/mdIcon.png") -44px 0;
+}
+
+.xinlang_inner {
+	position: relative;
+	top: 6px;left: 5px;
+	display: block;
+	width: 24px;height: 19px;
+	background: url("http://www.mingdao.com/modules/mdpublic/home/images/mdIcon.png") -44px -20px;
+}
+
+
+.linkMD {
+	display: inline-block;
+	width: 100px;height: 33px;
+	line-height: 33px;
+	text-align: center;
+	background: #7e7e7e;
+	border-radius: 4px;
+	transition: all .3s;
+}
+
+.linkMD:hover {
+	background: #fff;
+}
+
+.iconMD {
+	width: 87px;height: 21px;
+	display: block;
+	position: relative;
+	top: 6px;left: 6px;
+	background: url("http://www.mingdao.com/modules/mdpublic/home/images/mdIcon.png") -44px -38px;
+}
+
+.contactUs {
+	display: inline-block;
+	width: 176px;height: 58px;
+	position: relative;
+	top: 10px;
+	opacity: 0.5;
+	background: url("http://www.mingdao.com/modules/mdpublic/home/images/mdIcon.png") -390px -410px;
+}
+
+
+.playdiv {
+	position: absolute;
+	width: 139px;height: 139px;
+	top: 240px;left: 50%;
+	margin-left: -69px;
+	margin-top: -69px;
+}
+
+.play {
+	width: 100%;height: 100%;
+	display: block;
+	background: url("http://www.mingdao.com/modules/mdpublic/home/images/mdIcon.png") 0 -181px;
+}
+
+.play:hover {
+	background: url("http://www.mingdao.com/modules/mdpublic/home/images/mdIcon.png") -139px -181px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,104 @@
+<html>
+
+<head>
+<title>this is a model</title>
+<script src="../static/js/jquery-1.8.2.min.js"></script>
+
+<style type="text/css">
+@import url("../static/css/base.css");
+
+</style>
+
+
+<style type="text/css">
+/*=============================================*/
+
+.slidewinC {
+	position: fixed;
+	right: 0;bottom: 150px;
+}
+
+.slidewinC_top {
+	position: relative;
+	width: 300px;height: 240px;
+	background-color: orange;
+	z-index: 10;
+}
+
+.slidewinC_close {
+	position: absolute;
+	right: 0;
+	cursor: pointer;
+}
+
+.slidewinC_close:hover {
+	border: 1px solid #0f0;
+}
+
+.slidewinC_bottom {
+	position: absolute;
+	width: 300px;height: 140px;
+	background-color: #0f0;
+	z-index: 9;
+}
+
+.slidewinC_bottom_awake {
+	position: absolute;
+	left: -30px;
+	width: 30px;height: 90px;
+	background-color: orange;
+	text-align: center;
+	border-radius: 10px;
+	display: none;
+}
+
+.slidewinC_bottom_awake {
+	font-family: "Î¢ÈíÑÅºÚ";font-size: 20px;font-weight: bold;
+	color: #fff;
+}
+
+.slidewinC_bottom_awake:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+
+/*=============================================*/
+</style>
+
+</head>
+<body>
+	<div class="slidewinC">
+		<div class="slidewinC_top">
+			<img src="../static/img/close.jpg" class="slidewinC_close" id="closeC" />
+			
+		</div>
+		<div class="slidewinC_bottom">
+			<div class="slidewinC_bottom_awake">¿ì³öÀ´</div>
+		</div>
+	</div>
+
+<script type="text/javascript">
+
+$("#closeC").click(function(){
+	$(".slidewinC_bottom").animate({height:"0"},200);
+	$(".slidewinC_top").animate({bottom:"-140px"},500);
+	setTimeout('$(".slidewinC_top").animate({width:"0",right:"0"},500)',500);
+	setTimeout('$(".slidewinC_close").hide()',1000);
+	setTimeout('$(".slidewinC_bottom_awake").show()',500);
+});
+
+$(".slidewinC_bottom_awake").click(function(){
+	$(".slidewinC_bottom_awake").hide();
+	$(".slidewinC_close").show();
+	$(".slidewinC_top").animate({width:"300px"},500);
+	$(".slidewinC_bottom").animate({height:"140px"},500);
+	setTimeout('$(".slidewinC_top").animate({bottom:"0"},500)',500);
+});
+
+/*======================================================*/
+
+
+</script>
+</body>
+</html>

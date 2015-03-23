@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>index</title>
+<script src="static/js/jquery-1.8.2.min.js"></script>
+<style type="text/css">
+@import url("static/css/base.css");
+
+</style>
+
+<!--
+
+<link href="" rel="stylesheet" type="text/css" />
+
+-->
+
+
+<style type="text/css">
+/*=============================================*/
+body {
+	background:linear-gradient(to bottom, #56a3fb 0, #09488f 100%),#09488f;
+}
+
+.bagua {
+	width: 660px;
+	display: block;
+	margin: 25px auto;
+}
+
+.bagua:hover {
+	1transform-origin: 50px 50px;
+	transform:rotate(360deg);
+	transition:transform 2s ease;
+}
+
+.title {
+	position: absolute;
+	top: 0;left: 0;
+}
+
+.p_verticle {
+	width: 1em;
+	font-size: 70px;
+	font-family: "华文行楷";
+}
+
+.p_title1 {
+	position: absolute;
+	left: 70px;top: 100px;
+}
+
+.p_title2 {
+	position: absolute;
+	left: 170px;top: 170px;
+}
+
+.author {
+	position: absolute;
+	right: 50px;bottom: 100px;
+	font-family: "微软雅黑";
+	font-size: 70px;
+	border-bottom: 20px solid;
+}
+
+.author a {
+	text-decoration: none;
+	color: #000;
+}
+
+.clock {
+	position: absolute;
+	top: 50px;right: 50px;
+}
+
+/*================*/
+
+.point {
+	position: fixed;
+	top:-10px;left: -10px;
+	cursor: crosshair;
+	z-index: 10;
+}
+
+.one {
+	position: absolute;
+	width: 4px;height: 4px;
+	background-color: #000;
+}
+
+/*=============================================*/
+
+.foot {
+	position: absolute;
+	right: 50px;bottom: 50px;
+	font-family: "微软雅黑";
+}
+
+.foot a {
+	color: #000;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="point">
+	<div class="t one"></div>
+	<div class="b one"></div>
+	<div class="l one"></div>
+	<div class="r one"></div>
+</div>
+
+<div class="title">
+	<p class="p_verticle p_title1">自在,不自在</p>
+	<p class="p_verticle p_title2">不自在,自在</p>
+</div>
+
+<div class="clock">
+	<object width="160" height="70">
+		<param name="movie" value="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.swf">
+		<param name="wmode" value="transparent" />
+	</object>
+</div>
+
+
+<img src="static/img/bagua.png" border="0" usemap="#Map" class="bagua" />
+<map name="Map">
+  	<area shape="circle" coords="335,173,47" href="pages/work.jsp" title="work">
+  	<area shape="circle" coords="335,503,49" href="pages/break_record.jsp" title="break">
+</map>
+
+<p class="author">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pages/work.jsp">Kylin</a></p>
+<p class="foot">Copyright © 2015&nbsp;&nbsp;&nbsp;<a href="pages/work.jsp">Kylin</a></p>
+
+
+<script type="text/javascript">
+/*======================================================*/
+/*======================================================*/
+document.onclick = function(ev) {
+	var oEvent = ev || event;
+	var oLeft = oEvent.clientX + 'px';
+	var oTop = oEvent.clientY + 'px';
+	var s_width = window.screen.width;
+	var s_height = window.screen.height;
+
+	$(".one").css({width:"4px",height:"4px"});
+	$(".point").css({top:oTop,left:oLeft});
+	$(".l").animate({width:s_width,right:"0px"},300);
+	$(".r").animate({width:s_width},300);
+	$(".b").animate({height:s_height},300);
+	$(".t").animate({height:s_height,bottom:"0px"},300);
+}
+
+$(".point").mouseleave(function(){
+	$(".one").animate({width:"1px",height:"1px"},300);
+});
+/*======================================================*/
+/*======================================================*/
+</script>
+</body>
+</html>

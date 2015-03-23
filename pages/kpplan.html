@@ -1,0 +1,200 @@
+﻿<html>
+<head>
+<title>鲲鹏计划KPplan</title>
+
+<script src="../static/js/jquery-1.8.2.min.js"></script>
+<script src="../static/js/kpplan.js"></script>
+
+<link href="../static/css/kpplan.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+* {margin: 0px;padding: 0px;}
+
+.logo img {
+    position: relative;
+    width: 240px;height: 120px;
+    left: -20px;
+}
+
+.logo img:hover {
+	 width: 235px;height: 115px;
+   left: -12.5px;top: 2.5px;
+}
+
+#curve {
+  position: relative;
+  width: 600px;height: 200px;
+  left: -300px;
+}
+
+.kePublic {
+  height: 270px;
+}
+
+
+
+
+#div1 {
+  position: absolute;
+  left: 750px;top: 285px;
+  padding: 40px 20px 40px 20px;
+  width: 350px;
+  background: black;
+  border: 1px solid white;
+}
+
+#register {
+  position: relative;
+  width: 300px;height: 40px;line-height: 40px;
+  margin: 20px; padding: 7px 110px;
+  background: transparent url(../static/img/register.png) no-repeat;
+  font-family: "微软雅黑";font-size: 20px;color: white;
+  text-decoration: none;
+}
+
+#register:hover {
+  background: transparent url(../static/img/register2.png) no-repeat;
+}
+
+#email {
+  position: relative;
+  width: 300px;height: 40px;
+  margin: 20px;margin-top: 40px;
+  background:#FFF url(../static/img/mail2.png) no-repeat; 
+  padding-left: 42px;
+  font-size: 18px;
+}
+
+#password {
+  position: relative;
+  width: 300px;height: 40px;
+  margin: 20px;margin-bottom: 30px;
+  background:#FFF url(../static/img/password2.png) no-repeat; 
+  padding-left: 40px;
+  font-size: 18px;
+}
+
+#login {
+  position: relative;
+  width: 300px;height: 40px;line-height: 40px;
+  margin: 20px; margin-bottom: 0px;margin-top: 5px;
+  font-family: "微软雅黑";font-size: 18px;color: black;
+  text-decoration: none;
+}
+
+#login:hover {
+  background: #DDDDff;
+  cursor: pointer;
+}
+
+#remenberme {
+  margin-left: 20px;margin-bottom: 20px;
+}
+
+#forgetpw {
+  text-decoration: none;
+  color: gray;
+  font-size: 13px;
+}
+
+#sign {
+  color: gray;
+  font-size: 13px;
+}
+
+#floor {
+ background: black; 
+}
+
+#KKp {
+  position: absolute;
+  left: 0px;top: 200px;
+  color: #7a1453;
+  font-family: "华文行楷";font-size: 60px;
+}
+</style>
+</head>
+<body>
+<div class="kePublic">
+
+<div class="nav">
+ <ul>
+  <li class="nav_cut">
+  <a class="nav_a" href="#" target="_blank">&nbsp;&nbsp;&nbsp;首  页</a></li>
+  <li><a class="nav_a" href="#" target="_blank">个人主页</a></li>
+  <li><a class="nav_a" href="#" target="_blank">&nbsp;&nbsp;&nbsp;论 坛</a></li>
+  <li><a class="nav_a" href="#" target="_blank">榜上有名</a></li>
+  <li><a class="nav_a" href="#" target="_blank">活动专区</a></li>
+  <li><a class="nav_a" href="#" target="_blank">学习资料</a></li>
+  <li><a class="nav_a" href="http://www.baidu.com" target="_blank">关于我们</a></li>
+ </ul>
+
+<a class="logo" href="http://www.baidu.com" target="_blank">
+<img src="../static/img/kpp_logo.png" /></a>
+
+<p id="KKp">鲲鹏计划，助您成功！</p>
+</div>
+</div>
+
+<img src="../static/img/quxian.jpg" id="curve">
+
+<div id="div1">
+  <div id="ceiling">
+    <a href="#" id="register">立即注册</a>
+    <input type="text" id="email" />
+  </div>
+  <div id="floor">
+    <input type="password" id="password" />
+    <input type="checkbox" name="remenber" id="remenberme"/>
+    <span id="sign">记住我</span>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="#" name="forget" id="forgetpw">忘记密码？</a>
+    <input type="button" value="登 录" id="login" />
+  </div>
+  </div>
+
+<p>Copyright © 2014 林大小鸟</p>
+
+<script type="text/javascript">
+function changeMailBg(){
+  var obj=document.getElementById("email");
+  if(obj.value==""){
+    obj.style.backgroundImage="url('img/mail2.png')";
+  }else{
+    obj.style.backgroundImage="url('img/mail.png')";
+  }
+}
+
+function changePasswordBg(){
+  var obj=document.getElementById("password");
+  if(obj.value==""){
+    obj.style.backgroundImage="url('img/password2.png')";
+  }else{
+    obj.style.backgroundImage="url('img/password.png')";
+  }
+}
+
+(function() {
+  var obj=document.getElementById("email");
+  var timer = setInterval(changeMailBg, 100);
+  obj.onmouseover = function() {
+    timer = setInterval(changeMailBg, 100);
+  }
+  obj.onmouseout = function() {
+    clearInterval(timer);
+  }
+})();
+
+(function() {
+  var obj=document.getElementById("password");
+  var timer = setInterval(changePasswordBg, 100);
+  obj.onmouseover = function() {
+    timer = setInterval(changePasswordBg, 100);
+  }
+  obj.onmouseout = function() {
+    clearInterval(timer);
+  }
+})();
+</script>
+</body>
+</html>

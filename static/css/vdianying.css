@@ -1,0 +1,278 @@
+/*===========================================head==*/
+#head {
+	height: 30px;width: 100%;
+	background-color: #222222;
+}
+
+#head a {
+	color: #e1e1e1;
+	text-decoration: none;
+	font-size: 12px;
+	padding-right: 20px;
+}
+
+#head a:hover {
+	color: #fff;
+}
+
+#head p {
+	position: relative;
+	top: 5px;
+	text-indent: 4em;
+}
+
+#head .head_over {
+	color: #fff;
+}
+
+/*===========================================neck==*/
+
+#neck {
+	position: relative;
+	height: 55px;width: 100%;
+	padding-top: 15px;
+	background-color: #f9f9f9;
+	z-index: 10;
+}
+
+.neck_wrap {
+	padding-left: 60px;
+}
+
+.neck_logo {
+	width: 120px;height: 40px;
+	padding-right: 40px;
+	float: left;
+}
+
+.neck_p1 {
+	padding-top: 10px;
+	float: left;
+}
+
+.neck_p1 a {
+	padding-left: 12px;padding-right: 12px;padding-bottom: 20px;
+	text-decoration: none;
+	color: #191b1d;
+	font-family: "Î¢ÈíÑÅºÚ";
+	font-size: 15px;
+	transition:all 300ms ease;
+}
+
+.neck_p1 a:hover {
+	color: #248bff;
+	border-bottom: 4px solid #248bff;
+}
+
+.neck_selected {
+	font-weight: bold;
+}
+
+.neck_p2 {
+	float: right;
+	padding-right: 50px;
+}
+
+.neck_p2 a {
+	padding-right: 20px;
+	text-decoration: none;
+	color: #191b1d;
+	font-family: "Î¢ÈíÑÅºÚ";
+	font-size: 15px;
+}
+
+.neck_search {
+	position: relative;
+	left: 37px;
+	height: 30px;width: 170px;
+	font-size: 18px;
+	padding-left: 10px;padding-right: 35px;
+	background-color: #f7f7f7;
+	border-radius: 2px;
+	border: 1px solid #e3e3e3;
+}
+
+.neck_search:focus {
+	outline: none;
+}
+
+.img_search {
+	position: relative;
+	top: 8px;
+	cursor: pointer;
+}
+
+/*===========================================main==*/
+
+#main {
+	width: 100%;
+	background-color: #f1f1f1;
+}
+
+.main_wrap {
+	padding-left: 60px;
+}
+
+.main_title {
+	font-size: 30px;
+	font-family: "Î¢ÈíÑÅºÚ";
+	color: gray;
+}
+
+.main_quot {
+	position: relative;
+	color: #d2d2d2;
+	font-size: 40px;
+	top: 10px;
+}
+
+.main_share {
+	color: #969696;
+	font-family: "Î¢ÈíÑÅºÚ";
+	font-size: 17px;
+	text-decoration: none;
+}
+
+.main_p1 {
+	padding-top: 15px;
+}
+
+.main_tab {
+	
+}
+
+.main_tab td {
+	border: 28px solid #f1f1f1;
+	border-left: none;
+	overflow: hidden;
+	background: url("img/arrow.png") no-repeat;
+	background-position: 243px 80px;
+	background-color: #248bff;
+}
+
+.main_tab img {
+	position: relative;
+	width: 272px;height: 182px;
+	cursor: pointer;
+	left: 0;
+	display: block;
+	transition:all 400ms ease;
+}
+
+.main_tab td:hover img {
+	left: -48px;
+}
+
+
+/*===========================================foot==*/
+
+#foot {
+	width: 100%;
+	background-color: #222222;
+	padding-top: 35px;padding-bottom: 35px;
+}
+
+#foot p {
+	text-align: center;
+	color: #b8b3af;
+	font-size: 13px;
+	padding-bottom: 5px;
+}
+
+.foot_p1 {
+	margin-bottom: 10px;
+}
+
+#foot a {
+	color: #b8b3af;
+	text-decoration: none;
+}
+
+#foot a:hover {
+	text-decoration: underline;
+	color: #fff;
+}
+
+/*===========================================tool==*/
+
+#tool {
+	position: fixed;
+	right: 30px;bottom: 25px;
+	display: none;
+}
+
+#tool div {
+	width: 44px;height: 44px;
+	margin-bottom: 10px;
+	background-color: #fff;
+}
+
+#tool a {
+	position: relative;
+	width: 35px;height: 35px;
+	top: 5px;left: 8px;
+	display: block;
+	font-size: 14px;
+	color: #fff;
+	cursor: pointer;
+	text-decoration: none;
+	visibility: hidden;
+}
+
+.tool_div1 {
+	background: url("../img/qr-code.jpg");
+}
+
+.tool_div2 {
+	background: url("../img/suggestion.jpg");
+}
+
+.tool_div3 {
+	background: url("../img/backToTop.jpg");
+}
+
+#tool .tool_div1:hover {
+	background: #248bff;
+}
+
+#tool .tool_div2:hover {
+	background: #248bff;
+}
+
+#tool .tool_div3:hover {
+	background: #248bff;
+}
+
+#tool .tool_div1:hover a {
+	visibility: visible;
+}
+
+#tool .tool_div2:hover a {
+	visibility: visible;
+}
+
+#tool .tool_div3:hover a {
+	visibility: visible;
+}
+/*===========================================qrcode==*/
+
+#qrcode {
+	position: fixed;
+	width: 240px;
+	right: 110px;bottom: 0;
+	background-color: #fff;
+	display: none;
+}
+
+#qrcode p {
+	width: 240px;
+	text-align: center;
+	padding-top: 12px;padding-bottom: 12px;
+	font-family: "Î¢ÈíÑÅºÚ";
+}
+
+#qrcode img {
+	padding-left: 15px;
+}
+
+/*=============================================*/
