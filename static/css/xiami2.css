@@ -1,0 +1,236 @@
+
+a {
+	text-decoration: none;
+}
+
+.textStyle_1 {
+	color: #fff;
+	font-size: 16px;
+	font-family: 'Hiragino Sans GB','Microsoft Yahei';
+	text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+	line-height: 60px;
+	padding-left: 15px;padding-right: 15px;
+}
+
+.textStyle_2 {
+	width: 60px;height: 28px;
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+	line-height: 28px;
+	font-family: 'Hiragino Sans GB','Microsoft Yahei';
+	text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+	border: 1px solid #DB6B16;
+	border-radius: 2px;
+	border-width: 1px 0 1px 1px;
+}
+
+.textStyle_3 {
+	width: 64px;height: 28px;
+	background: linear-gradient(to bottom, #cc691d 0, #c25f13 100%);
+	border: 1px solid #DB6B16;
+	color: #fff;
+	border-radius: 3px;
+	font-size: 12px;
+	display: block;
+	float: left;
+	text-align: center;
+	line-height: 28px;
+}
+
+.textStyle_4 {
+	color: #FF5511;
+	font-family: 'Hiragino Sans GB','Microsoft Yahei';
+	font-size: 14px;
+}
+
+.textStyle_5 {
+	color: #000;
+	font-family: 'Hiragino Sans GB','Microsoft Yahei';
+	font-size: 14px;
+}
+
+.textStyle_6 {
+	color: #000;
+	font-weight: bold;
+	font-family: 'Hiragino Sans GB','Microsoft Yahei';
+	font-size: 13px;
+}
+
+.textStyle_7 {
+	color: #fff;
+	font-size: 13px;
+	font-family: 'Hiragino Sans GB','Microsoft Yahei';
+}
+
+.textStyle_8 {
+	color: #000;
+	font-family: 'Microsoft Yahei';
+	font-size: 18px;
+}
+
+.textStyle_9 {
+	color: orange;
+	font-size: 12px;
+}
+
+.textStyle_9:hover {
+	text-decoration: underline;
+}
+
+.textStyle_10 {
+	font-size: 14px;
+	font-family: 'Microsoft Yahei';
+}
+
+.textStyle_11 {
+	font-size: 12px;
+	color: #fff;
+}
+
+.textStyle_12 {
+	font-size: 12px;
+}
+
+.textStyle_13 {
+	font-size: 12px;
+	color: #bbb !important;
+}
+
+.textStyle_14 {
+	font-size: 14px;
+	color: #fff;
+	font-family: 'Microsoft Yahei';
+}
+
+.textStyle_15 {
+	font-size: 12px;
+	color: #000;
+}
+
+.textStyle_16 {
+	font-size: 14px;
+	color: #000;
+}
+
+.textStyle_17 {
+	font-family: 'Microsoft Yahei';
+	font-weight: bold;
+	font-size: 13px;
+	color: #444;
+}
+
+.textStyle_18 {
+	font-size: 14px;
+	color: #000;
+}
+
+/*==============*/
+
+.highlight_1:hover {
+	background: linear-gradient(to bottom, #cc691d 0, #c25f13 100%);
+}
+
+.highlight_2:hover {
+	background: linear-gradient(to bottom, #cc111d 0, #c25f13 100%);
+}
+
+.highlight_3:hover {
+	color: #FF5511;
+}
+
+.highlight_4:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+.highlight_5:hover {
+	text-decoration: underline;
+}
+
+/*==============*/
+
+.boxSize_1 {
+	width: 140px;height: 140px;
+	display: block;
+}
+
+.boxSize_2 {
+	width: 15px;height: 15px;
+}
+
+.boxSize_3 {
+	width: 30px;height: 30px;
+	border-radius: 3px;
+}
+
+/*==============*/
+
+.picsBoxB {
+	width: 740px;
+	position: absolute;
+}
+
+.picsBoxB-main li {
+	width: 740px;
+	display: none;
+}
+
+.picsBoxB-main img {
+	display: block;
+	cursor: pointer;
+}
+
+.picsBoxB-main .picSelected {
+	display: block;
+}
+
+.picsBoxB-foot {
+	position: absolute;
+	bottom: 10px;right: 10px;
+	width: 64px;height: 20px;
+	background-color: rgba(0,0,0,0.1);
+	border-radius: 18px;
+}
+
+.picsBoxB-foot li {
+	width: 8px;height: 8px;
+	background-color: #DDDDDD;
+	float: left;
+	margin-right: 2px;margin-left: 2px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.picsBoxB-foot ul {
+	position: relative;
+	width: 95%;
+	margin: 0 auto;
+	top: 5px;
+}
+
+.picsBoxB-foot .circleSelected {
+	background-color: orange;
+}
+
+/*=================*/
+
+.head_img1 {
+	display: block;
+}
+
+.head_img2 {
+	border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+

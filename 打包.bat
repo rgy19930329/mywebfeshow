@@ -1,0 +1,1 @@
+jar cvf mywebfeshow.war */

@@ -1,0 +1,78 @@
+<head>
+<title>页面滑动切换5</title>
+<script src="../static/js/jquery-1.8.2.min.js"></script>
+
+<script type="text/javascript">
+$(function(){
+	$(".menu li").click(function(){
+		var index = $(this).index();
+		if(!$("#colorWin1 .main").is(":animated")){
+			$("#colorWin1 .main").animate({top:-400*index},500);
+		}
+        if(!$("#colorWin2 .main").is(":animated")){
+            $("#colorWin2 .main").animate({left:-400*index},500);
+        }
+	})
+})
+</script>
+
+<style>
+#colorWin1 {position:relative;width:700px;height:400px;border:10px solid #0f0;margin:10px;overflow:hidden;}
+#colorWin1 .main {position:absolute;}
+
+#colorWin2 {position:relative;width:400px;height:250px;left: 850px;border:10px solid #0f0;margin:10px;overflow:hidden;}
+#colorWin2 .main {position:absolute;width: 2000px}
+
+#select {float: left;width: 130px;height: 200px;border: 10px solid #0f0;}
+#select .menu li {width:100px;height:30px;cursor:pointer}
+
+
+#colorWin1 .main .mbox1 {width:700px;height:400px;text-align:center;line-height:400px;background-color: #f60}
+#colorWin1 .main .mbox2 {width:700px;height:400px;text-align:center;line-height:400px;background-color: #666}
+#colorWin1 .main .mbox3 {width:700px;height:400px;text-align:center;line-height:400px;background-color: #369}
+#colorWin1 .main .mbox4 {width:700px;height:400px;text-align:center;line-height:400px;background-color: #c30}
+#colorWin1 .main .mbox5 {width:700px;height:400px;text-align:center;line-height:400px;background-color: #f00}
+
+#colorWin2 .main .mbox1 {float:left;width:400px;height:250px;text-align:center;line-height:250px;background-color: #f60}
+#colorWin2 .main .mbox2 {float:left;width:400px;height:250px;text-align:center;line-height:250px;background-color: #666}
+#colorWin2 .main .mbox3 {float:left;width:400px;height:250px;text-align:center;line-height:250px;background-color: #369}
+#colorWin2 .main .mbox4 {float:left;width:400px;height:250px;text-align:center;line-height:250px;background-color: #c30}
+#colorWin2 .main .mbox5 {float:left;width:400px;height:250px;text-align:center;line-height:250px;background-color: #f00}
+</style>
+</head>
+
+<body>
+<div id="select">
+<ul class="menu">
+        <li>我是橙色</li>
+        <li>我是灰色</li>
+        <li>我是蓝色</li>
+        <li>我是暗红色</li>
+        <li>我是红色</li>
+    </ul>
+</div>
+
+<div id="colorWin1">
+	<div class="main">
+    	<div class="mbox1">我是橙色</div>
+        <div class="mbox2">我是灰色</div>
+        <div class="mbox3">我是蓝色</div>
+        <div class="mbox4">我是暗红色</div>
+        <div class="mbox5">我是红色</div>
+    </div>
+</div>
+
+<div id="colorWin2">
+    <div class="main">
+        <div class="mbox1">我是橙色</div>
+        <div class="mbox2">我是灰色</div>
+        <div class="mbox3">我是蓝色</div>
+        <div class="mbox4">我是暗红色</div>
+        <div class="mbox5">我是红色</div>
+    </div>
+</div>
+
+
+</body>
+</html>
+
