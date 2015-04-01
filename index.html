@@ -5,6 +5,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>index</title>
 <script src="static/js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="static/js/tagcloud.js"></script>
 <style type="text/css">
 @import url("static/css/base.css");
 
@@ -21,6 +22,7 @@
 /*=============================================*/
 body {
 	background:linear-gradient(to bottom, #56a3fb 0, #09488f 100%),#09488f;
+	background-repeat: no-repeat;
 }
 
 .bagua {
@@ -33,6 +35,14 @@ body {
 	1transform-origin: 50px 50px;
 	transform:rotate(360deg);
 	transition:transform 2s ease;
+}
+
+.tagcloud_iframe {
+	position: relative;
+	left: 50%;top: 70px;
+	width: 640px;height: 600px;
+	margin-left: -320px;
+	border: none;
 }
 
 .title {
@@ -101,6 +111,65 @@ body {
 	color: #000;
 }
 
+/*=============================================*/
+
+#tagsList {
+	position: relative;
+    width: 600px; height: 600px; 
+    left: 50%;top: 70px;
+    margin-left: -300px;
+}
+
+#tagsList a {
+    position:absolute; 
+    top: 0px; left: 0px; 
+    font-family: "Microsoft YaHei"; 
+    color: #000; 
+    font-weight:bold; 
+    text-decoration:none; 
+    padding: 2px;
+}
+
+#tagsList a:hover {
+    border: 1px solid orange;
+}
+
+/*=============================================*/
+
+.entry {
+	position: absolute;
+	width: 300px;
+	right: 30px;top: 200px;
+}
+
+.entry a {
+	font-family: "Microsoft YaHei";
+	font-size: 30px;
+	text-decoration: none;
+	display: block;
+	color: #fff;
+	transition:all 300ms ease;
+}
+
+.entry a:hover {
+	font-size: 32px;
+}
+
+.entry p {
+	background-color: #5555FF;
+	margin: 10px;margin-top: 20px;
+	height: 100px;line-height: 100px;
+	text-align: center;
+	border-radius: 10px;
+	transition:all 300ms ease;
+}
+
+.entry p:hover {
+	background-color: #6666FF;
+}
+
+/*=============================================*/
+
 </style>
 
 </head>
@@ -125,12 +194,48 @@ body {
 	</object>
 </div>
 
+<div class="entry">
+	<p><a href="pages/work.jsp">work</a></p>
+	<p><a href="pages/break_record.jsp">break</a></p>
+</div>
 
-<img src="static/img/bagua.png" border="0" usemap="#Map" class="bagua" />
-<map name="Map">
+
+<!--img src="static/img/bagua.png" border="0" usemap="#Map" class="bagua" /-->
+<!--map name="Map">
   	<area shape="circle" coords="335,173,47" href="pages/work.jsp" title="work">
   	<area shape="circle" coords="335,503,49" href="pages/break_record.jsp" title="break">
-</map>
+</map-->
+
+<div id="tagsList">
+        <span><a href="pages/work.jsp">work</a></span>
+        <span><a href="pages/break_record.jsp">break</a></span>
+        <span><a href="android_download.html">app下载</a></span>
+        <span><a href="pages/android_mynote.html">android 笔记</a></span>
+        <span><a href="pages/android_original.html">android 原创</a></span>
+        <span><a href="pages/break_novel.html">看过的小说</a></span>
+        <span><a href="pages/break_record.jsp">岁月之门</a></span>
+        <span><a href="http://www.qidian.com/Book/2893735.aspx">锥世</a></span>
+        <span><a href="pages/login.html">悄悄话</a></span>
+        <span><a href="pages/login_admin.html">管理员登录</a></span>
+        <span><a href="pages/webfe_clone.html">web前端</a></span>
+        <span><a href="pages/javaee_mynote.html">JavaEE</a></span>
+        <span><a href="pages/android_original.html">Android</a></span>
+        <span><a href="http://blog.csdn.net/u011700203/article/details/38793873">Linux shell</a></span>
+        <span><a href="http://blog.csdn.net/u011700203/article/details/25116471">C语言</a></span>
+        <span><a href="http://blog.csdn.net/u011700203/article/details/38473251">C++</a></span>
+        <span><a href="http://blog.csdn.net/u011700203/article/details/26398443">Java</a></span>
+        <span><a href="http://blog.csdn.net/u011700203">我的博客</a></span>
+        <span><a href="pages/vdianying.html">V电影</a></span>
+        <span><a href="pages/xiami.html">虾米音乐</a></span>
+        <span><a href="pages/mingdao.html#1">明道</a></span>
+        <span><a href="pages/juzimi.html">句子迷</a></span>
+        <span><a href="pages/yiyan.html">译言网</a></span>
+        <span><a href="pages/zengarden.html">CSS 禅意花园</a></span>
+        <span><a href="pages/kpplan.html">KPplan</a></span>
+        <span><a href="pages/webfe_javascript.html">JavaScript</a></span>
+        <span><a href="http://mfzm.sinaapp.com">魔发之门</a></span>
+        <span><a href="http://blog.csdn.net/u011700203">我的博客</a></span>
+    </div>
 
 <p class="author">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="pages/work.jsp">Kylin</a></p>
 <p class="foot">Copyright © 2015&nbsp;&nbsp;&nbsp;<a href="pages/work.jsp">Kylin</a></p>
