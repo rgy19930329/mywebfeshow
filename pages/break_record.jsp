@@ -360,7 +360,7 @@
 
 
 <script type="text/javascript">	
-	$.getJSON("../data/break_record.json", function(data) {
+	$.getJSON("http://mywebfeshow-mydir.stor.sinaapp.com/data/break_record.json", function(data) {
 		$("#record_info").empty();
         $.each(data.root, function(i, item) {
            	//console.log(item.date+",\n"+item.comment);
