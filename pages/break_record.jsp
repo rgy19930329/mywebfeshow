@@ -352,7 +352,7 @@
 
 
 	<video  style="display:none;"  controls=""  autoplay="autoplay"  loop="loop"  name="media">
-		<source src="../static/music/tkzc.mp3"  type="audio/mpeg">
+		<source src="http://mywebfeshow-mydir.stor.sinaapp.com/data/tkzc.mp3"  type="audio/mpeg">
 	</video>
 
 
